@@ -1,0 +1,14 @@
+package observer;
+
+import domain.Employee;
+
+
+public class HRDepartment implements IObserver {
+
+	@Override
+	public void callMe(Employee emp, String msg) {
+		System.out.println("HR System Notified");
+		System.out.println(msg+" "+emp.getName());
+	}
+
+}
